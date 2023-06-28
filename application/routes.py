@@ -75,7 +75,7 @@ def upload():
         session["sentence"] = boxes
 
         # delete file after you are done working with it
-        # os.remove(file_location)
+        os.remove(file_location)    
 
         return redirect("/decoded/")
 
